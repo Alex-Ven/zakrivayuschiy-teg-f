@@ -17,4 +17,442 @@
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
+  font-family: var(--main-font, sans-serif);
+  font-variation-settings: "wght" var(--font-text-wght);
+  background-color: var(--Themes-background);
+  color: var(--Themes-mainColor);
+  background-image: var(--bg-img);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.content__width {
+  inline-size: clamp(375px, 60vw, 700px);
+  background-color: var(--Themes-background);
+  border: 2px solid;
+}
+
+.header {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 20px;
+  block-size: clamp(327px, 48vh, 364px);
+  margin: 100px auto;
+  padding-block-end: 20px;
+  font-family: var(--accent-font);
+  text-transform: uppercase;
+}
+
+.header__title {
+  font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
+}
+
+.header__text {
+  font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
+}
+
+.theme-menu__list {
+  display: flex;
+  flex-direction: column;
+
+  gap: 8px;
+  font-size: 14px;
+}
+
+.theme-menu {
+  margin-inline-start: 20px;
+}
+
+.theme-menu__button {
+  position: relative;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  text-transform: inherit;
+  transition: opacity 0.3s ease;
+}
+
+.theme-menu__button:hover {
+  opacity: 60%;
+}
+
+.theme-menu__button:focus-visible,
+.theme-menu__button:focus {
+  outline: none;
+  opacity: 60%;
+}
+
+.theme-menu__button::after {
+  content: "";
+  display: block;
+  width: 0%;
+  height: 2px;
+  margin-top: -1px;
+  background-color: var(--Themes-mainColor);
+  transition: width 0.5s;
+}
+
+.theme-menu__button:focus-visible::after {
+  width: 100%;
+}
+
+.theme-menu__button:disabled {
+  pointer-events: none;
+  opacity: 60%;
+}
+
+.theme-menu__button:disabled::after {
+  content: "▶";
+  position: absolute;
+  inset-inline-start: -18px;
+  inset-block-start: 2px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 50px;
+  margin: 104px auto 50px;
+  font-family: var(--main-font);
+  font-size: 18px;
+}
+
+.content-article {
+  block-size: clamp(960px, 70vh, fit-content);
+}
+
+.content-picture {
+  inline-size: 100%;
+  block-size: clamp(371px, 50vw, 696px);
+  position: relative;
+  margin: 0;
+}
+
+.image {
+  inline-size: 100%;
+  block-size: 100%;
+  object-fit: cover;
+}
+
+.image-freetrack {
+  object-position: bottom;
+  filter: blur(2px) drop-shadow(0 0 10px var(--Themes-mainColor));
+}
+
+.image-1sprint {
+  object-position: center;
+  filter: invert(0.7) drop-shadow(0 0 10px var(--Themes-mainColor));
+}
+
+.image-firstsprint {
+  object-position: center;
+  filter: sepia(80%) drop-shadow(0 0 10px var(--Themes-mainColor));
+}
+
+.image-secondsprint {
+  object-position: center;
+  object-fit: none;
+  filter: hue-rotate(90deg) drop-shadow(0 0 10px var(--Themes-mainColor));
+}
+
+.image-secondsprint2 {
+  object-position: top;
+  object-fit: cover;
+  filter: saturate(258%) drop-shadow(0 0 10px var(--Themes-mainColor));
+}
+
+.image-thirdsprint {
+  object-position: center;
+  object-fit: cover;
+  filter: saturate(150%) opacity(0.9) hue-rotate(90deg)
+    drop-shadow(0 0 10px var(--Themes-mainColor));
+}
+
+.image-thirdsprint2 {
+  object-position: center;
+  object-fit: cover;
+  filter: brightness(150%) saturate(60%)
+    drop-shadow(0 0 10px var(--Themes-mainColor));
+}
+
+.image-now {
+  object-position: top;
+  object-fit: cover;
+  filter: drop-shadow(0 0 10px var(--Themes-mainColor));
+}
+
+.content-lable {
+  position: absolute;
+  z-index: 1;
+  inset-inline-end: 4%;
+  inset-block-start: 4%;
+  mix-blend-mode: hard-light;
+  opacity: 0.5;
+}
+
+.content-lable__text {
+  font-family: var(--accent-font);
+  font-size: 14px;
+  text-transform: uppercase;
+  text-shadow: -1px 0 var(--Themes-background), 0 1px var(--Themes-background),
+    1px 0 var(--Themes-background), 0 -1px var(--Themes-background);
+}
+
+@supports (
+  (text-stroke: 1px var(--Themes-background)) or
+    (-webkit-text-stroke: 1px var(--Themes-background))
+) {
+  .content-lable__text {
+    -webkit-text-stroke: 1px var(--Themes-background);
+    text-shadow: none;
+  }
+}
+
+.content-image {
+  inline-size: 100%;
+  object-fit: cover;
+}
+
+.content-article__title {
+  font-size: 18px;
+  font-variation-settings: "wght" var(--font-title-wght);
+  padding: 4px 10px;
+}
+
+.content-article__text {
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
+  padding: 25px;
+}
+
+.content-article__paragraph {
+}
+
+.card__button {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+}
+
+.card__icon-button {
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  border: 2px solid var(--Themes-background);
+  inline-size: 38px;
+  block-size: 35px;
+  padding: 0;
+  outline: 2px solid transparent;
+  transition: outline 0.3s ease;
+}
+
+.card__icon-button:focus {
+  outline: none;
+}
+
+.card__icon-button:focus-visible {
+  outline: 2px solid;
+}
+
+.like-icon {
+  inline-size: 100%;
+}
+
+.like-icon:hover {
+  cursor: pointer;
+}
+
+.like-icon__core {
+  fill: transparent;
+  transition: fill 0.3s 0.03s;
+}
+
+.like-icon__main-body {
+  fill: transparent;
+  transition: fill 0.3s;
+}
+
+.like-icon:hover .like-icon__core {
+  fill: var(--Themes-mainColor);
+  transition: fill 0.3s;
+}
+
+.like-icon:hover .like-icon__main-body {
+  fill: var(--Themes-mainColor);
+  transition: fill 0.3s 0.05s;
+}
+
+.like-icon:active .like-icon__core {
+  fill: var(--like-icon__mainColor);
+  transition: fill 0.3s;
+}
+
+.like-icon:active .like-icon__main-body {
+  fill: var(--like-icon__mainColor);
+  transition: fill 0.3s 0.05s;
+}
+
+.like-icon__contour {
+  transition: fill 0.1s;
+}
+
+.like-icon__heart {
+}
+
+.like-icon.is-liked .like-icon__core {
+  fill: var(--like-icon__mainColor);
+  transition: fill 0.3s;
+}
+
+.like-icon.is-liked .like-icon__main-body {
+  fill: var(--like-icon__mainColor);
+  transition: fill 0.3s 0.05s;
+}
+
+.like-icon.is-liked .like-icon__contour {
+  fill: var(--like-icon__mainColor);
+  transition: fill 0.3s 0.06s;
+}
+
+.like-icon__sparks {
+  opacity: 0;
+}
+
+.card__like-button {
+  position: relative;
+  inline-size: 130px;
+  block-size: 38px;
+  background-color: transparent;
+  align-self: self-end;
+  border: 2px solid;
+  box-shadow: 0px 0px 0px var(--Themes-mainColor);
+  transition: box-shadow 0.3s;
+}
+
+.save-button:hover,
+.dialog-button:hover,
+.card__like-button:hover {
+  cursor: pointer;
+}
+
+.button-decoration::before {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 0%;
+  height: 100%;
+  inset-inline-start: 0px;
+  inset-block-start: 0px;
+  background-color: var(--Themes-mainColor);
+  transition: width 0.5s ease-in-out;
+}
+
+.button-decoration:hover::before {
+  width: 100%;
+}
+
+.save-button:focus,
+.card__like-button:focus {
+  outline: none;
+  box-shadow: 2px 2px 0px var(--Themes-mainColor);
+}
+
+.button__text {
+  position: relative;
+  font-family: var(--accent-font);
+  font-size: 14px;
+  line-height: 90%;
+  color: var(--Themes-accentColor);
+  mix-blend-mode: difference;
+  z-index: 1;
+}
+
+.footer {
+  display: flex;
+  margin-block-end: 105px;
+}
+
+.save-button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: var(--Themes-background);
+  margin: auto;
+  padding: 15px 21px;
+  border: 2px solid;
+  box-shadow: 0px 0px 0px var(--Themes-mainColor);
+  transition: box-shadow 0.3s;
+}
+
+@media (max-width: 375px) {
+  .save-button {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .floppy {
+    scale: 1.3;
+  }
+}
+
+.floppy {
+  position: relative;
+  fill: var(--Themes-accentColor);
+  mix-blend-mode: difference;
+  z-index: 1;
+}
+
+dialog::backdrop {
+  background-color: var(--dialog-background);
+  opacity: 75%;
+}
+
+.dialog {
+  inline-size: clamp(341px, 24vw, 357px);
+  font-size: 14px;
+  background-color: var(--Themes-background);
+  border: 2px solid var(--Themes-mainColor);
+  padding: 30px;
+}
+
+.dialog-content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.dialog-content__text {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-content: flex-start;
+}
+
+.dialog-content__text-hight {
+  line-height: 150%;
+  text-transform: uppercase;
+}
+
+.dialog-floppy {
+  fill: var(--Themes-mainColor);
+  inline-size: 32%;
+}
+
+.dialog-button {
+  background-color: transparent;
+  color: var(--Themes-mainColor);
+  font-family: var(--accent-font);
+  line-height: 90%;
+  font-size: 14px;
+  padding: 10px;
+  border: 2px solid;
 }
