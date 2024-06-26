@@ -232,8 +232,6 @@
   padding: 25px;
 }
 
-.content-article__paragraph {
-}
 
 .card__button {
   display: flex;
@@ -302,9 +300,6 @@
 
 .like-icon__contour {
   transition: fill 0.1s;
-}
-
-.like-icon__heart {
 }
 
 .like-icon.is-liked .like-icon__core {
