@@ -451,3 +451,8 @@ dialog::backdrop {
   padding: 10px;
   border: 2px solid;
 }
+
+.dialog-button:focus,
+.dialog-button:focus-visible {
+outline: none;
+}
