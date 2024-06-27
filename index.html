@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="color-scheme" content="light auto dark" />
+    <meta name="color-scheme" content="light dark" />
     <title>Закрывающий тег</title>
     <link rel="icon" href="./images/favicon.ico" sizes="any" />
     <link rel="icon" href="./images/favicon.svg" type="image/svg+xml" />
@@ -18,8 +18,8 @@
   </head>
   <body class="page">
     <header class="header content__width">
-      <h1 class="header__title">&lt/html&gt</h1>
-      <p class="header__text">закрывающий тег</p>
+      <a class="header__title"> &#60;/html&#62;</a>
+      <h1 class="header__text">закрывающий тег</h1>
       <nav class="theme-menu header__theme-menu">
         <!-- Не меняйте разметку этого списка, иначе скрипты перестанут работать -->
         <ul class="theme-menu__list">
@@ -47,14 +47,14 @@
       </nav>
     </header>
     <main>
-      <section class="content">
+      <div class="content">
         <article class="content-article content__width">
           <h2 class="content-article__title">
             Фритрек и нулевой спринт: Подготовка к работе
           </h2>
           <figure class="content-picture">
-            <figcaption class="content-lable">
-              <p class="content-lable__text">&ltFreetrack&gt</p>
+            <figcaption class="content-lable content-lable__text">
+              &lt;Freetrack&gt;
             </figcaption>
             <picture>
               <source srcset="./images/Freetrack.avif" type="image/avif" />
@@ -78,7 +78,7 @@
               мечте.
             </p>
             <div class="card__button">
-              <button class="card__icon-button">
+              <button class="card__icon-button" type="button">
                 <svg
                   class="like-icon"
                   xmlns="http://www.w3.org/2000/svg"
@@ -109,7 +109,7 @@
                   />
                 </svg>
               </button>
-              <button class="card__like-button button-decoration">
+              <button class="button card__like-button" type="button">
                 <span class="button__text"> Like </span>
               </button>
             </div>
@@ -119,14 +119,14 @@
         <article class="content-article content__width">
           <h2 class="content-article__title">1 спринт: Я — чистый лист</h2>
           <figure class="content-picture">
-            <figcaption class="content-lable">
-              <p class="content-lable__text">&ltfirstsprint&gt</p>
+            <figcaption class="content-lable content-lable__text">
+              &lt;firstsprint&gt;
             </figcaption>
             <picture>
               <source srcset="./images/1sprint.avif" type="image/avif" />
               <img
                 loading="lazy"
-                class="image image-1sprint"
+                class="image image-first__firstsprint"
                 src="./images/1sprint.jpg"
                 alt="Листы бумаги"
               />
@@ -145,7 +145,7 @@
               алгоритмов. Что-то смутное проглядывается впереди...
             </p>
             <div class="card__button">
-              <button class="card__icon-button">
+              <button class="card__icon-button" type="button">
                 <svg
                   class="like-icon"
                   xmlns="http://www.w3.org/2000/svg"
@@ -178,7 +178,7 @@
                   />
                 </svg>
               </button>
-              <button class="card__like-button button-decoration">
+              <button class="button card__like-button" type="button">
                 <span class="button__text"> Like </span>
               </button>
             </div>
@@ -188,8 +188,8 @@
         <article class="content-article content__width">
           <h2 class="content-article__title">1 спринт: А если не получится?</h2>
           <figure class="content-picture">
-            <figcaption class="content-lable">
-              <p class="content-lable__text">&ltfirstsprint&gt</p>
+            <figcaption class="content-lable content-lable__text">
+              &lt;firstsprint&gt;
             </figcaption>
             <picture>
               <source srcset="./images/firstsprint.avif" type="image/avif" />
@@ -212,7 +212,7 @@
               дальнейшюю работу, вперед!
             </p>
             <div class="card__button">
-              <button class="card__icon-button">
+              <button class="card__icon-button" type="button">
                 <svg
                   class="like-icon"
                   xmlns="http://www.w3.org/2000/svg"
@@ -245,7 +245,7 @@
                   />
                 </svg>
               </button>
-              <button class="card__like-button button-decoration">
+              <button class="button card__like-button" type="button">
                 <span class="button__text"> Like </span>
               </button>
             </div>
@@ -254,8 +254,8 @@
         <article class="content-article content__width">
           <h2 class="content-article__title">2 спринт: Погоня за идеалом</h2>
           <figure class="content-picture">
-            <figcaption class="content-lable">
-              <p class="content-lable__text">&ltsecondsprint&gt</p>
+            <figcaption class="content-lable content-lable__text">
+              &lt;secondsprint&gt;
             </figcaption>
             <picture>
               <source srcset="./images/secondsprint.avif" type="image/avif" />
@@ -280,7 +280,7 @@
               нет...
             </p>
             <div class="card__button">
-              <button class="card__icon-button">
+              <button class="card__icon-button" type="button">
                 <svg
                   class="like-icon"
                   xmlns="http://www.w3.org/2000/svg"
@@ -313,7 +313,7 @@
                   />
                 </svg>
               </button>
-              <button class="card__like-button button-decoration">
+              <button class="button card__like-button" type="button">
                 <span class="button__text"> Like </span>
               </button>
             </div>
@@ -322,14 +322,14 @@
         <article class="content-article content__width">
           <h2 class="content-article__title">2 спринт: О тех, кто рядом</h2>
           <figure class="content-picture">
-            <figcaption class="content-lable">
-              <p class="content-lable__text">&ltsecondsprint&gt</p>
+            <figcaption class="content-lable content-lable__text">
+              &lt;secondsprint&gt;
             </figcaption>
             <picture>
               <source srcset="./images/secondsprint2.avif" type="image/avif" />
               <img
                 loading="lazy"
-                class="image image-secondsprint2"
+                class="image image-second__secondsprint"
                 src="./images/secondsprint2.jpg"
                 alt="Жуки из пикселей разных цветов"
               />
@@ -349,7 +349,7 @@
               так сложно. Вместе мы справимся!
             </p>
             <div class="card__button">
-              <button class="card__icon-button">
+              <button class="card__icon-button" type="button">
                 <svg
                   class="like-icon"
                   xmlns="http://www.w3.org/2000/svg"
@@ -382,7 +382,7 @@
                   />
                 </svg>
               </button>
-              <button class="card__like-button button-decoration">
+              <button class="button card__like-button" type="button">
                 <span class="button__text"> Like </span>
               </button>
             </div>
@@ -391,8 +391,8 @@
         <article class="content-article content__width">
           <h2 class="content-article__title">3 спринт: Обходные стратегии</h2>
           <figure class="content-picture">
-            <figcaption class="content-lable">
-              <p class="content-lable__text">&ltthirdsprint&gt</p>
+            <figcaption class="content-lable content-lable__text">
+              &lt;thirdsprint&gt;
             </figcaption>
             <picture>
               <source srcset="./images/thirdsprint.avif" type="image/avif" />
@@ -415,7 +415,7 @@
               новое вдохновение.
             </p>
             <div class="card__button">
-              <button class="card__icon-button">
+              <button class="card__icon-button" type="button">
                 <svg
                   class="like-icon"
                   xmlns="http://www.w3.org/2000/svg"
@@ -448,7 +448,7 @@
                   />
                 </svg>
               </button>
-              <button class="card__like-button button-decoration">
+              <button class="button card__like-button" type="button">
                 <span class="button__text"> Like </span>
               </button>
             </div>
@@ -459,14 +459,14 @@
             3 спринт: Когда опускаются руки
           </h2>
           <figure class="content-picture">
-            <figcaption class="content-lable">
-              <p class="content-lable__text">&ltthirdsprint&gt</p>
+            <figcaption class="content-lable content-lable__text">
+              &lt;thirdsprint&gt;
             </figcaption>
             <picture>
               <source srcset="./images/thirdsprint2.avif" type="image/avif" />
               <img
                 loading="lazy"
-                class="image image-thirdsprint2"
+                class="image image-second__thirdsprint"
                 src="./images/thirdsprint2.jpg"
                 alt="Силуэт парня в кепке на фоне светящегося табло"
               />
@@ -485,7 +485,7 @@
               skils - are very important!
             </p>
             <div class="card__button">
-              <button class="card__icon-button">
+              <button class="card__icon-button" type="button">
                 <svg
                   class="like-icon"
                   xmlns="http://www.w3.org/2000/svg"
@@ -518,7 +518,7 @@
                   />
                 </svg>
               </button>
-              <button class="card__like-button button-decoration">
+              <button class="button card__like-button" type="button">
                 <span class="button__text"> Like </span>
               </button>
             </div>
@@ -528,8 +528,8 @@
         <article class="content-article content__width">
           <h2 class="content-article__title">«Сейчас я здесь»</h2>
           <figure class="content-picture">
-            <figcaption class="content-lable">
-              <p class="content-lable__text">&ltnow&gt</p>
+            <figcaption class="content-lable content-lable__text">
+              &lt;now&gt;
             </figcaption>
             <picture>
               <source srcset="./images/now.avif" type="image/avif" />
@@ -555,7 +555,7 @@
               столько интересного ...
             </p>
             <div class="card__button">
-              <button class="card__icon-button">
+              <button class="card__icon-button" type="button">
                 <svg
                   class="like-icon"
                   xmlns="http://www.w3.org/2000/svg"
@@ -588,18 +588,18 @@
                   />
                 </svg>
               </button>
-              <button class="card__like-button button-decoration">
+              <button class="button card__like-button" type="button">
                 <span class="button__text"> Like </span>
               </button>
             </div>
           </div>
         </article>
-      </section>
+      </div>
     </main>
     <footer class="footer">
       <button
-        class="save-button button-decoration"
-        type="button"
+        class="button save-button"
+        type="submit"
         onclick="window['dialog-id'].showModal()"
         aria-controls="dialog-id"
       >
@@ -615,30 +615,27 @@
         <span class="button__text">Сохранить на память</span>
       </button>
 
-      <dialog id="dialog-id" class="dialog">
-        <div class="dialog-content">
-          <div class="dialog-content__text">
+      <dialog id="dialog-id" class="dialog-content">
+        <form class="dialog-form__content">
+          <div class="form__content">
             <svg
-              class="dialog-floppy"
               xmlns="http://www.w3.org/2000/svg"
-              width="39"
-              height="39"
+              width="82"
+              height="82"
               viewBox="0 0 21 21"
             >
-              <use href="./images/floppy.svg#floppy-1"></use>
+              <use href="./images/floppy.svg#floppy-1" class="dialog-floppy"></use>
             </svg>
-            <span class="button__text dialog-content__text-hight"
-              >Вставьте дискету, чтобы продолжить</span
-            >
+            <p class="form__content-text">Вставьте дискету, чтобы продолжить</p>
           </div>
           <button
-            class="dialog-button"
-            type="button"
+            class="button dialog-button"
+            type="submit"
             onclick="window['dialog-id'].close()"
-          >
-            OK
-          </button>
-        </div>
+          ><span class="button__text">
+            ok
+            </span></button>
+        </form>
       </dialog>
     </footer>
     <script src="./scripts/like.js"></script>

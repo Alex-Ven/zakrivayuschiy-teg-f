@@ -9,7 +9,8 @@
   --Themes-mainColor: #000;
   --like-icon__mainColor: #ff0000;
   --dialog-background: #000;
-  --bg-img: repeating-linear-gradient( to left, #d3d3d3, transparent 2px),
-  repeating-linear-gradient( #d3d3d3, transparent 2px),
+  --bg-img: repeating-linear-gradient(to right, #d3d3d3 0 2px, transparent 2px 4px),
+  repeating-linear-gradient( to bottom, #d3d3d3 0 2px, transparent 2px 4px),
   linear-gradient(#e7e7e7 0.01%, #1a1a1a);
+  --bg-color: #fff;
 }

@@ -10,8 +10,10 @@
   --Themes-mainColor: #00cc14;
   --like-icon__mainColor: #ff0000;
   --dialog-background: #000;
-  --bg-img: repeating-linear-gradient(to left, #000, transparent 2px),
-  repeating-linear-gradient(#000, transparent 2px),linear-gradient(#007F0C, #004306);
+  --bg-img: repeating-linear-gradient(to right, #000 0 2px, transparent 2px 4px),
+    repeating-linear-gradient(to bottom, #000 0 2px, transparent 2px 4px),
+    linear-gradient(#007f0c, #004306);
+  --bg-color: #000;
   --font-title-wght: 785;
   --font-text-wght: 465;
 }
@@ -22,26 +24,16 @@
   --Themes-mainColor: #000;
   --like-icon__mainColor: #ff0000;
   --dialog-background: #000;
-  --bg-img: repeating-linear-gradient(to left, #d3d3d3, transparent 2px),
-  repeating-linear-gradient(#d3d3d3, transparent 2px),
-  linear-gradient(#e7e7e7 0.01%, #1a1a1a);
+  --bg-img: repeating-linear-gradient(
+      to right,
+      #d3d3d3 0 2px,
+      transparent 2px 4px
+    ),
+    repeating-linear-gradient(to bottom, #d3d3d3 0 2px, transparent 2px 4px),
+    linear-gradient(#e7e7e7 0.01%, #1a1a1a);
+  --bg-color: #fff;
   --font-title-wght: 700;
   --font-text-wght: 400;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    --Themes-background: #fff;
-    --Themes-accentColor: #fff;
-    --Themes-mainColor: #000;
-    --like-icon__mainColor: #ff0000;
-    --dialog-background: #000;
-    --bg-img: repeating-linear-gradient(to left, #d3d3d3, transparent 2px),
-    repeating-linear-gradient(#d3d3d3, transparent 2px),
-    linear-gradient(#e7e7e7 0.01%, #1a1a1a);
-    --font-title-wght: 700;
-    --font-text-wght: 400;
-  }
 }
 
 @media (prefers-color-scheme: dark) {
@@ -51,8 +43,14 @@
     --Themes-mainColor: #00cc14;
     --like-icon__mainColor: #ff0000;
     --dialog-background: #000;
-    --bg-img: repeating-linear-gradient(to left, #000, transparent 2px),
-    repeating-linear-gradient(#000, transparent 2px),linear-gradient(#007F0C, #004306);
+    --bg-img: repeating-linear-gradient(
+        to right,
+        #000 0 2px,
+        transparent 2px 4px
+      ),
+      repeating-linear-gradient(to bottom, #000 0 2px, transparent 2px 4px),
+      linear-gradient(#007f0c, #004306);
+    --bg-color: #000;
     --font-title-wght: 785;
     --font-text-wght: 465;
   }
