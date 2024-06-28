@@ -12,6 +12,31 @@
 
 Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
 */
+.theme-menu__button {
+  transition: opacity 0.3s ease;
+}
+
+.theme-menu__button:hover {
+  opacity: 60%;
+}
+
+.theme-menu__button::after {
+  content: "";
+  display: block;
+  width: 0%;
+  height: 2px;
+  margin-top: -1px;
+  background-color: var(--Themes-mainColor, #000);
+  transition: width 0.5s;
+}
+
+.theme-menu__button:focus-visible::after {
+  width: 100%;
+}
+
+.button {
+  transition: box-shadow 0.3s;
+}
 
 .theme-menu__button:disabled::after {
   animation: arrow-moving infinite alternate ease-in-out 0.5s;
@@ -19,12 +44,56 @@
 
 @keyframes arrow-moving {
   0% {
-    translate: 0;
+    transform: translate(0);
   }
 
   100% {
-    translate: 4px;
+    transform: translate(4px);
   }
+}
+
+.card__icon-button {
+  transition: outline 0.3s ease;
+}
+
+.like-icon__core {
+  transition: fill 0.3s 0.03s;
+}
+
+.like-icon__main-body {
+  transition: fill 0.3s;
+}
+
+.like-icon:hover .like-icon__core {
+  transition: fill 0.3s;
+}
+
+.like-icon:hover .like-icon__main-body {
+  transition: fill 0.3s 0.05s;
+}
+
+.like-icon:active .like-icon__core {
+  transition: fill 0.3s;
+}
+
+.like-icon:active .like-icon__main-body {
+  transition: fill 0.3s 0.05s;
+}
+
+.like-icon__contour {
+  transition: fill 0.1s;
+}
+
+.like-icon.is-liked .like-icon__core {
+  transition: fill 0.3s;
+}
+
+.like-icon.is-liked .like-icon__main-body {
+  transition: fill 0.3s 0.05s;
+}
+
+.like-icon.is-liked .like-icon__contour {
+  transition: fill 0.3s 0.06s;
 }
 
 .like-icon.is-liked .like-icon__heart {
@@ -54,4 +123,20 @@
   to {
     opacity: 1;
   }
+}
+
+.button::before {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 0%;
+  height: 100%;
+  inset-inline-start: 0px;
+  inset-block-start: 0px;
+  background-color: var(--Themes-mainColor, #000);
+  transition: width 0.5s ease-in-out;
+}
+
+.button:hover::before {
+  width: 100%;
 }

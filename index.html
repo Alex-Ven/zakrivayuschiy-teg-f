@@ -18,8 +18,8 @@
   </head>
   <body class="page">
     <header class="header content__width">
-      <a class="header__title"> &#60;/html&#62;</a>
-      <h1 class="header__text">закрывающий тег</h1>
+      <a class="header__logo"> &#60;/html&#62;</a>
+      <h1 class="header__title">закрывающий тег</h1>
       <nav class="theme-menu header__theme-menu">
         <!-- Не меняйте разметку этого списка, иначе скрипты перестанут работать -->
         <ul class="theme-menu__list">
@@ -60,7 +60,7 @@
               <source srcset="./images/Freetrack.avif" type="image/avif" />
               <img
                 loading="lazy"
-                class="image image-freetrack"
+                class="image image-freetrack__steps"
                 src="./images/Freetrack.jpg"
                 alt="Ступеньки эсколатора"
               />
@@ -126,7 +126,7 @@
               <source srcset="./images/1sprint.avif" type="image/avif" />
               <img
                 loading="lazy"
-                class="image image-first__firstsprint"
+                class="image image-firstsprint__paper"
                 src="./images/1sprint.jpg"
                 alt="Листы бумаги"
               />
@@ -195,7 +195,7 @@
               <source srcset="./images/firstsprint.avif" type="image/avif" />
               <img
                 loading="lazy"
-                class="image image-firstsprint"
+                class="image image-firstsprint__truck"
                 src="./images/firstsprint.jpg"
                 alt="Грузовик, графити из плиток"
               />
@@ -261,7 +261,7 @@
               <source srcset="./images/secondsprint.avif" type="image/avif" />
               <img
                 loading="lazy"
-                class="image image-secondsprint"
+                class="image image-secondsprint__graffity"
                 src="./images/secondsprint.jpg"
                 alt="Ступеньки с графити цветов"
               />
@@ -329,7 +329,7 @@
               <source srcset="./images/secondsprint2.avif" type="image/avif" />
               <img
                 loading="lazy"
-                class="image image-second__secondsprint"
+                class="image image-secondsprint__pixelbugs"
                 src="./images/secondsprint2.jpg"
                 alt="Жуки из пикселей разных цветов"
               />
@@ -398,7 +398,7 @@
               <source srcset="./images/thirdsprint.avif" type="image/avif" />
               <img
                 loading="lazy"
-                class="image image-thirdsprint"
+                class="image image-thirdsprint__clock"
                 src="./images/thirdsprint.jpg"
                 alt="Цифровые часы показывают 21 15"
               />
@@ -466,7 +466,7 @@
               <source srcset="./images/thirdsprint2.avif" type="image/avif" />
               <img
                 loading="lazy"
-                class="image image-second__thirdsprint"
+                class="image image-thirdsprint__silhouette"
                 src="./images/thirdsprint2.jpg"
                 alt="Силуэт парня в кепке на фоне светящегося табло"
               />
@@ -535,7 +535,7 @@
               <source srcset="./images/now.avif" type="image/avif" />
               <img
                 loading="lazy"
-                class="image image-now"
+                class="image image-now__pixels"
                 src="./images/now.jpg"
                 alt="Картина из крупных пикселей, всадник на коне "
               />
@@ -616,25 +616,23 @@
       </button>
 
       <dialog id="dialog-id" class="dialog-content">
-        <form class="dialog-form__content">
+        <form class="dialog-form__content" method="dialog">
           <div class="form__content">
-            <svg
+            <svg class="dialog-floppy"
               xmlns="http://www.w3.org/2000/svg"
-              width="82"
-              height="82"
-              viewBox="0 0 21 21"
+              viewBox="0 0 21 21"   
             >
-              <use href="./images/floppy.svg#floppy-1" class="dialog-floppy"></use>
+              <use href="./images/floppy.svg#floppy-1"></use>
             </svg>
             <p class="form__content-text">Вставьте дискету, чтобы продолжить</p>
           </div>
           <button
-            class="button dialog-button"
+            class="button dialog-button" aria-label="Закрыть модально окно"
             type="submit"
             onclick="window['dialog-id'].close()"
-          ><span class="button__text">
-            ok
-            </span></button>
+          >
+            <span class="button__text"> ok </span>
+          </button>
         </form>
       </dialog>
     </footer>
