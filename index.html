@@ -78,12 +78,15 @@
               мечте.
             </p>
             <div class="card__button">
-              <button class="card__icon-button" type="button">
+              <button class="card__icon-button" type="button" aria-labelledby="like-button-01">
                 <svg
                   class="like-icon"
                   xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 39 39"
+                  width="39"
+                  height="36"
+                  viewBox="0 0 39 36"
                   fill="none"
+                  aria-hidden="true"
                 >
                   <g class="like-icon__heart">
                     <path
@@ -109,7 +112,7 @@
                   />
                 </svg>
               </button>
-              <button class="button card__like-button" type="button">
+              <button class="button card__like-button" type="button" id="like-button-01">
                 <span class="button__text"> Like </span>
               </button>
             </div>
@@ -606,11 +609,9 @@
         <svg
           class="floppy"
           xmlns="http://www.w3.org/2000/svg"
-          width="21"
-          height="21"
           viewBox="0 0 21 21"
         >
-          <use href="./images/floppy.svg#floppy-1"></use>
+          <use href="./images/floppy.svg#floppy-save"></use>
         </svg>
         <span class="button__text">Сохранить на память</span>
       </button>
@@ -622,7 +623,7 @@
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 21 21"   
             >
-              <use href="./images/floppy.svg#floppy-1"></use>
+              <use href="./images/floppy.svg#floppy-save"></use>
             </svg>
             <p class="form__content-text">Вставьте дискету, чтобы продолжить</p>
           </div>

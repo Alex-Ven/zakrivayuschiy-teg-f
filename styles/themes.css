@@ -1,9 +1,3 @@
-/* В этом файле вы опишете значения переменных в разных цветовых схемах.
-Придерживайтесь такого именования классов:
-✦ theme-dark — класс тёмной темы
-✦ theme-light — класс светлой темы
-✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
-*/
 :root.theme-dark {
   --Themes-background: #000;
   --Themes-accentColor: #00cc14;
@@ -12,7 +6,7 @@
   --dialog-background: #000;
   --bg-img: repeating-linear-gradient(to right, #000 0 2px, transparent 2px 4px),
     repeating-linear-gradient(to bottom, #000 0 2px, transparent 2px 4px),
-    linear-gradient(#007f0c, #004306);
+    linear-gradient(180deg, #007f0c 0%, #004306 100%);
   --bg-color: #000;
   --font-title-wght: 785;
   --font-text-wght: 465;
@@ -30,7 +24,7 @@
       transparent 2px 4px
     ),
     repeating-linear-gradient(to bottom, #d3d3d3 0 2px, transparent 2px 4px),
-    linear-gradient(#e7e7e7 0.01%, #1a1a1a);
+    linear-gradient(180deg, #e7e7e7 0%, #e7e7e7 0.01%, #1a1a1a 100%);
   --bg-color: #fff;
   --font-title-wght: 700;
   --font-text-wght: 400;
@@ -49,7 +43,7 @@
         transparent 2px 4px
       ),
       repeating-linear-gradient(to bottom, #000 0 2px, transparent 2px 4px),
-      linear-gradient(#007f0c, #004306);
+      linear-gradient(180deg, #007f0c 0%, #004306 100%);
     --bg-color: #000;
     --font-title-wght: 785;
     --font-text-wght: 465;

@@ -1,23 +1,7 @@
-/* Здесь вы напишете основную часть стилей страницы.
-
-Будьте внимательны! Для корректной работы скриптов на этом сайте нужно, чтобы в HTML некоторые классы были названы особым образом:
-✦ theme-dark — класс тёмной темы
-✦ theme-light — класс светлой темы
-✦ like-icon — для svg-иконки анимированного сердца
-✦ card__like-button — для кнопки Like рядом с иконкой
-✦ card__icon-button — для кнопки, оборачивающей иконку
-✦ card__icon-button — для кнопки, оборачивающей иконку
-✦ is-liked — для обозначения состояния лайкнутой иконки в виде сердца
-✦ button__text — для обозначения текстового элемента внутри кнопки
-
-Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
-
-*/
-
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
-  font-family: var(--main-font, sans-serif);
+  font-family: var(--main-font), sans-serif;
   font-variation-settings: "wght" var(--font-text-wght, 400);
   background-color: var(--bg-color, #fff);
   color: var(--Themes-mainColor, #000);
@@ -280,7 +264,6 @@
 }
 
 .button:focus,
-.card__icon-button:focus,
 .theme-menu__button:focus {
   outline: none;
 }
@@ -302,6 +285,8 @@
 
 .footer {
   display: flex;
+  align-items: center;
+  justify-content: center;
   margin-block-end: 103px;
 }
 
@@ -315,6 +300,7 @@
 
 .floppy {
   position: relative;
+  inline-size: 21px;
   fill: var(--Themes-accentColor, #fff);
   mix-blend-mode: difference;
   z-index: 1;
