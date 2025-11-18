@@ -97,8 +97,6 @@ open public/index.html
 **Alexander Venedyukhin** — Aspiring Frontend / Full Stack Developer  
 [LinkedIn](https://linkedin.com/in/alexander-venedyukhin-1288abb2) | [GitHub](https://github.com/Alex-Ven)
 
-> Open to **Junior Fullstack**, **Frontend/Backend developer** roles
-
 ---
 
 ## Support the Project
